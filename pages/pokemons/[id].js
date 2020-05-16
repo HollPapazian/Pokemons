@@ -14,8 +14,8 @@ const Post = (props) => {
             <div style={{fontSize:'2rem'}}>{props.pokemon}</div>
             <img style={{width: '200px'}} src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`} alt=""/>
             <div className='pokemon-nav'>
-            <Link href={`/pokemons/${(id-1).toString()}`}><a className="nav-link">Назад</a></Link>
-            <Link href={`/pokemons/${(+id+1).toString()}`}><a className="nav-link">Вперед</a></Link>
+            <Link href="/pokemons/[id]" as={`/pokemons/${(id-1).toString()}`} ><a className="nav-link">Назад</a></Link>
+            <Link href="/pokemons/[id]" as={`/pokemons/${(+id+1).toString()}`} ><a className="nav-link">Вперед</a></Link>
             </div>
             
           </div> 
