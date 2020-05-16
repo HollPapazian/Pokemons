@@ -5,7 +5,7 @@ function About() {
   return (
     <>
     <Layout>
-    <div>About</div>
+    <div>Pokemons App version 1.0.3</div>
     </Layout>
     </>
   );
